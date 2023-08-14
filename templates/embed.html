@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Steganography Web App</title>
+</head>
+<body>
+    <h1>Embed Message into Image</h1>
+    <form action="/embed/" method="post" enctype="multipart/form-data">
+        <label for="password">Encryption Key:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <label for="image">Select an image:</label><br>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+        <input type="submit" value="Embed">
+    </form>
+</body>
+</html>
